@@ -3,6 +3,7 @@
 declare(strict_types=1);
 
 return [
+    // 默认连接池配置
     'default' => [
         'node' => [
             ['127.0.0.1', '11211'],

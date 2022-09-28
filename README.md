@@ -33,6 +33,7 @@ php bin/hyperf.php vendor:publish czy/hyperf-memcached
 declare(strict_types=1);
 
 return [
+    // 默认连接池配置
     'default' => [
         'node' => [
             ['127.0.0.1', '11211'],
@@ -111,6 +112,7 @@ class MemController extends AbstractController
     public function __construct()
     {
         $container = ApplicationContext::getContainer();
+        // 通过工厂切换连接池
         $this->memcachedFactory = $container->get(MemcachedFactory::class)->get('memcached-b');
     }
 
