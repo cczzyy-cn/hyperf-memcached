@@ -2,11 +2,19 @@
     "name": "czy/hyperf-memcached",
     "type": "library",
     "license": "MIT",
+    "authors": [
+        {
+            "name": "czy",
+            "email": "czy.email@qq.com"
+        }
+    ],
     "keywords": [
         "php",
-        "hyperf"
+        "hyperf",
+        "pool",
+        "memcached"
     ],
-    "description": "",
+    "description": "A memcached component for hyperf-3.",
     "autoload": {
         "psr-4": {
             "Czy\\HyperfMemcached\\": "src/"
