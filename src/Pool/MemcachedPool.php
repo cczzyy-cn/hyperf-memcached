@@ -11,6 +11,7 @@ declare(strict_types=1);
  */
 namespace Czy\HyperfMemcached\Pool;
 
+use Czy\HyperfMemcached\Frequency;
 use Czy\HyperfMemcached\MemcachedConnection;
 use Hyperf\Contract\ConfigInterface;
 use Hyperf\Contract\ConnectionInterface;
@@ -34,6 +35,7 @@ class MemcachedPool extends Pool
         }
         $this->config = $config->get($key);
         $options = Arr::get($this->config, 'pool', []);
+        $this->frequency = make(Frequency::class);
         parent::__construct($container, $options);
     }
 
