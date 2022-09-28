@@ -175,7 +175,7 @@ class MemController extends AbstractController
     }
 
     /**
-     * 设置
+     * memcached-b 连接池设置
      *
      * Author czy
      * Date 2022/9/14 1:48
@@ -194,7 +194,7 @@ class MemController extends AbstractController
     }
 
     /**
-     * 获取
+     * memcached-b 连接池获取
      *
      * Author czy
      * Date 2022/9/14 1:49
