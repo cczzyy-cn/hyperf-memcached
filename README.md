@@ -1,3 +1,9 @@
+# hyperf-memcached
+[![Latest Stable Version](https://poser.pugx.org/czy/hyperf-memcached/v/stable)](https://packagist.org/packages/czy/hyperf-memcached)
+[![PHP Version Require](https://poser.pugx.org/czy/hyperf-memcached/require/php)](https://packagist.org/packages/czy/hyperf-memcached)
+[![Total Downloads](https://poser.pugx.org/czy/hyperf-memcached/downloads)](https://packagist.org/packages/czy/hyperf-memcached) 
+[![License](https://poser.pugx.org/czy/hyperf-memcached/license)](https://packagist.org/packages/czy/hyperf-memcached) 
+
 
 ## Docker Hyperf 容器内添加 php-memcached 扩展 
 ### Hyperf 镜像：hyperf/hyperf:8.0-alpine-v3.15-swoole
