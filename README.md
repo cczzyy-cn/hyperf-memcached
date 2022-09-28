@@ -4,7 +4,6 @@ composer require czy/hyperf-memcached
 ```
 
 ## 生成配置文件
-
 ```bash
 php bin/hyperf.php vendor:publish czy/hyperf-memcached
 ```
@@ -38,14 +37,14 @@ use Psr\Http\Message\ResponseInterface as Psr7ResponseInterface;
 class MemController extends AbstractController
 {
     /**
-     * 注入默认连接池
+     * 注入默认连接池 default
      * @var Memcached
      */
     #[Inject]
     protected Memcached $memcached;
 
     /**
-     * 工厂获取的 memcached-b 连接池
+     * 工厂获取的连接池 memcached-b
      * @var Memcached
      */
     protected Memcached $memcachedFactory;
