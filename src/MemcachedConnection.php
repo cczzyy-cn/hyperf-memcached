@@ -25,7 +25,7 @@ class MemcachedConnection extends Connection implements ConnectionInterface
         'user' => null,
         'password' => null,
         'options' => [
-            Memcached::OPT_BINARY_PROTOCOL => true, // 二进制协议,SASL开启后，只有二进制模式可以使用
+            Memcached::OPT_BINARY_PROTOCOL => false, // 二进制协议,SASL开启后，只有二进制模式可以使用
             Memcached::OPT_DISTRIBUTION => Memcached::DISTRIBUTION_CONSISTENT, // 一致性分布算法(基于libketama)
             Memcached::OPT_LIBKETAMA_COMPATIBLE => true, // 开启或关闭兼容的 libketama 类行为
             Memcached::OPT_NO_BLOCK => true, // 开启或关闭异步 I/O 这将使得存储函数传输速度最大化
