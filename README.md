@@ -1,4 +1,21 @@
 
+## Docker Hyperf 容器内添加 php-memcached 扩展 
+### Hyperf 镜像：hyperf/hyperf:8.0-alpine-v3.15-swoole
+```bash
+# apk 设置阿里源
+sed -i 's@dl-cdn.alpinelinux.org@mirrors.aliyun.com@g' /etc/apk/repositories
+# 安装环境 对于 PHP8.x，您必须安装 $PHPIZE_DEPS 
+apk add --no-cache $PHPIZE_DEPS
+# memcached 扩展依赖
+apk add libmemcached-dev cyrus-sasl-dev
+# pecl8 安装 memcached 扩展
+pecl8 install memcached
+# 开启扩展
+echo "extension=memcached.so" > /etc/php8/conf.d/memcached.ini
+# 输出 memcached 说明成功安装扩展
+php -m | grep memcached
+```
+
 ## 安装组件
 ```bash
 composer require czy/hyperf-memcached
@@ -20,6 +37,7 @@ return [
         'node' => [
             ['127.0.0.1', '11211'],
         ],
+        // SASL鉴权用户密码
         'user' => '',
         'password' => '',
         'options' => [

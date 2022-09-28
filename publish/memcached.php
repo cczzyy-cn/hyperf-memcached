@@ -7,6 +7,7 @@ return [
         'node' => [
             ['127.0.0.1', '11211'],
         ],
+        // SASL鉴权用户密码
         'user' => '',
         'password' => '',
         'options' => [
