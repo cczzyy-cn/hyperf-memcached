@@ -1,5 +1,5 @@
-# component-creator
+# composer require
 
 ```
-composer require czy/memcached
+composer require czy/hyperf-memcached
 ```
