@@ -27,6 +27,14 @@ class ConfigProvider
                     ],
                 ],
             ],
+            'publish' => [
+                [
+                    'id' => 'config',
+                    'description' => 'The config of memcached client.',
+                    'source' => __DIR__ . '/../publish/memcached.php',
+                    'destination' => BASE_PATH . '/config/autoload/memcached.php',
+                ],
+            ],
         ];
     }
 }
