@@ -1,4 +1,6 @@
+
 # hyperf-memcached
+
 [![Latest Stable Version](https://poser.pugx.org/czy/hyperf-memcached/v)](https://packagist.org/packages/czy/hyperf-memcached)
 [![PHP Version Require](https://poser.pugx.org/czy/hyperf-memcached/require/php)](https://www.php.net)
 [![Require](https://poser.pugx.org/czy/hyperf-memcached/require/ext-memcached)](https://packagist.org/packages/vufind/vufind)
@@ -9,6 +11,7 @@
 
 ## Docker Hyperf 容器内添加 php-memcached 扩展 
 ### Hyperf 镜像：hyperf/hyperf:8.0-alpine-v3.15-swoole
+
 ```bash
 # apk 设置阿里源
 sed -i 's@dl-cdn.alpinelinux.org@mirrors.aliyun.com@g' /etc/apk/repositories
@@ -25,16 +28,19 @@ php -m | grep memcached
 ```
 
 ## 安装组件
+
 ```bash
 composer require czy/hyperf-memcached
 ```
 
 ## 生成配置文件
+
 ```bash
 php bin/hyperf.php vendor:publish czy/hyperf-memcached
 ```
 
 ## 修改配置 config/autoload/memcached.php
+
 ```php
 <?php
 
@@ -77,6 +83,7 @@ return [
 ```
 
 ## 控制器中使用
+
 ```php
 <?php
 
