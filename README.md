@@ -1,5 +1,5 @@
 # component-creator
 
 ```
-composer create-project hyperf/component-creator
+composer require czy/memcached
 ```
