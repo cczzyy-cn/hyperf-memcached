@@ -4,8 +4,10 @@
 [![Latest Stable Version](https://poser.pugx.org/czy/hyperf-memcached/v)](https://packagist.org/packages/czy/hyperf-memcached)
 [![PHP Version Require](https://poser.pugx.org/czy/hyperf-memcached/require/php)](https://www.php.net)
 [![Require](https://poser.pugx.org/czy/hyperf-memcached/require/ext-memcached)](https://packagist.org/packages/vufind/vufind)
-[![Require](https://poser.pugx.org/czy/hyperf-memcached/require/hyperf/di)](https://packagist.org/packages/hyperf/di)
+[![Require](https://poser.pugx.org/czy/hyperf-memcached/require/hyperf/contract)](https://packagist.org/packages/hyperf/contract)
 [![Require](https://poser.pugx.org/czy/hyperf-memcached/require/hyperf/pool)](https://packagist.org/packages/hyperf/pool)
+[![Require](https://poser.pugx.org/czy/hyperf-memcached/require/hyperf/utils)](https://packagist.org/packages/hyperf/utils)
+[![Require](https://poser.pugx.org/czy/hyperf-memcached/require/psr/container)](https://packagist.org/packages/psr/container)
 [![Total Downloads](https://poser.pugx.org/czy/hyperf-memcached/downloads)](https://packagist.org/packages/czy/hyperf-memcached)
 [![License](https://poser.pugx.org/czy/hyperf-memcached/license)](https://packagist.org/packages/czy/hyperf-memcached)
 
