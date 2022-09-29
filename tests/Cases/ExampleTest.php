@@ -2,12 +2,12 @@
 
 declare(strict_types=1);
 /**
- * This file is part of Hyperf.
+ * This file is part of hyperf-memcached.
  *
- * @link     https://www.hyperf.io
- * @document https://hyperf.wiki
- * @contact  group@hyperf.io
- * @license  https://github.com/hyperf/hyperf/blob/master/LICENSE
+ * @link     https://github.com/Cheng-ZY/hyperf-memcached
+ * @document https://github.com/Cheng-ZY/hyperf-memcached
+ * @contact  cczzyy.cn@gmail.com
+ * @license  https://github.com/Cheng-ZY/hyperf-memcached/blob/main/LICENSE
  */
 namespace HyperfTest\Cases;
 

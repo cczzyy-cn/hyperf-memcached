@@ -1,7 +1,14 @@
 <?php
 
 declare(strict_types=1);
-
+/**
+ * This file is part of hyperf-memcached.
+ *
+ * @link     https://github.com/Cheng-ZY/hyperf-memcached
+ * @document https://github.com/Cheng-ZY/hyperf-memcached
+ * @contact  cczzyy.cn@gmail.com
+ * @license  https://github.com/Cheng-ZY/hyperf-memcached/blob/main/LICENSE
+ */
 namespace Czy\HyperfMemcached;
 
 use Czy\HyperfMemcached\Pool\PoolFactory;
@@ -11,7 +18,6 @@ use Czy\HyperfMemcached\Pool\PoolFactory;
  */
 class MemcachedProxy extends Memcached
 {
-
     public function __construct(PoolFactory $factory, string $pool)
     {
         parent::__construct($factory);
@@ -28,5 +34,4 @@ class MemcachedProxy extends Memcached
     {
         return parent::__call($name, $arguments);
     }
-
 }
