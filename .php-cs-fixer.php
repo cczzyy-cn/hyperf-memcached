@@ -1,12 +1,21 @@
 <?php
 
+declare(strict_types=1);
+/**
+ * This file is part of hyperf-memcached.
+ *
+ * @link     https://github.com/Cheng-ZY/hyperf-memcached
+ * @document https://github.com/Cheng-ZY/hyperf-memcached
+ * @contact  cczzyy.cn@gmail.com
+ * @license  https://github.com/Cheng-ZY/hyperf-memcached/blob/main/LICENSE
+ */
 $header = <<<'EOF'
-This file is part of Hyperf.
+This file is part of hyperf-memcached.
 
-@link     https://www.hyperf.io
-@document https://hyperf.wiki
-@contact  group@hyperf.io
-@license  https://github.com/hyperf/hyperf/blob/master/LICENSE
+@link     https://github.com/Cheng-ZY/hyperf-memcached
+@document https://github.com/Cheng-ZY/hyperf-memcached
+@contact  cczzyy.cn@gmail.com
+@license  https://github.com/Cheng-ZY/hyperf-memcached/blob/main/LICENSE
 EOF;
 
 return (new PhpCsFixer\Config())
@@ -23,13 +32,13 @@ return (new PhpCsFixer\Config())
             'location' => 'after_declare_strict',
         ],
         'array_syntax' => [
-            'syntax' => 'short'
+            'syntax' => 'short',
         ],
         'list_syntax' => [
-            'syntax' => 'short'
+            'syntax' => 'short',
         ],
         'concat_space' => [
-            'spacing' => 'one'
+            'spacing' => 'one',
         ],
         'blank_line_before_statement' => [
             'statements' => [
@@ -38,7 +47,7 @@ return (new PhpCsFixer\Config())
         ],
         'general_phpdoc_annotation_remove' => [
             'annotations' => [
-                'author'
+                'author',
             ],
         ],
         'ordered_imports' => [
